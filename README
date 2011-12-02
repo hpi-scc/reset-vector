@@ -1,0 +1,13 @@
+                             SCC Reset Vector
+Copyright (C) 2011, Jan-Arne Sobania <jan-arne.sobania@hpi.uni-potsdam.de>
+Hasso Plattner Institute for Software Systems Engineering, Potsdam, Germany
+
+************
+* Overview
+
+This is the reset vector code for the Intel Single-chip Cloud Computer (SCC).
+It initializes processor registers for operating system bootstrap, then jumps
+directly into the real-mode portion of the kernel.
+
+The reset vector is specific to our SCC-specific Linux kernel, as it sets the
+corresponding sub-architecture identifier in the bootloader parameter block.
